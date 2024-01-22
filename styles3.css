@@ -1,0 +1,423 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ font-size: 16px;
+ font-family: 'Roboto', sans-serif;
+ background-color: hsl(235, 18%, 26%);
+ display: grid;
+ place-items: center;
+ height: 100vh;
+}
+
+
+.sign-up-section {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.bg{
+    background-image: url('illustration-sign-up-mobile.svg');
+    width: 100%;
+    height: 284px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-position: center top;
+    order: 1;
+}
+
+.info{
+    order: 2;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+ 
+
+
+}
+
+.header h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(234, 29%, 20%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.header p{
+    font-size: 1rem;
+    color:  hsl(234, 29%, 20%);
+    display: inline-block;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.lists span{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.lists p{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color:  hsl(234, 29%, 20%); ;
+}
+
+
+
+.footer{
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    width: 100%;
+}
+
+.email-label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+
+.email-label label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: inherit;
+    color: hsl(234, 29%, 20%);
+}
+
+.error{
+    font-size: 0.8rem;
+    margin-left: auto;
+    color: red;
+    display: none;
+}
+
+
+.email-field{
+    margin-bottom: 1.5rem;
+    border: none;
+}
+   
+input{
+    width: 100%;
+    color: hsl(231, 7%, 60%);
+    outline: none;
+    border: 1px solid  hsl(231, 7%, 60%);
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    padding-left: 2rem;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+
+.input--error{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    outline: none;
+    border: 1.3px solid red;
+   
+}
+
+
+
+
+button{
+    width: 100%;
+    background-color: hsl(234, 29%, 20%) ;
+    color:  white;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    transition: all 0.15s ease-in-out;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.02rem;
+}
+
+
+
+
+ input:hover, input:focus-visible{
+    border: 1.3px solid hsl(234, 29%, 20%);
+    background-color: white;
+    color: hsl(234, 29%, 20%) ;
+}
+
+
+button:focus, button:focus-visible, button:hover{
+   background-color: hsl(4, 100%, 67%);
+   box-shadow: 0 10px 30px -10px hsl(4, 100%, 67%);
+}
+
+
+
+.attribution{
+    text-align: center;
+    margin-top: 3rem;
+    color: hsl(234, 29%, 20%) ;
+    font-size: 1.3rem;
+
+}
+
+
+/*SUCCESS DESIGN*/
+
+.success-section{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    position: relative;
+  
+}
+
+.success-header{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+
+.success-header span img{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.success-header h1{
+    margin-left: 2rem;
+    max-width: 15rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color:  hsl(234, 29%, 20%);
+
+}
+
+
+.success-message{
+    margin-left: 2rem;
+    padding-right: 3rem;
+    color:  hsl(234, 29%, 20%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.success-message span{
+    font-weight: bold;
+}
+
+
+
+
+.dismiss-btn{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    padding: 0 3rem;
+    text-align: center;
+    border: none;
+
+}
+
+.dismiss-btn a{
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    background-color: hsl(234, 29%, 20%) ;
+    color:  white;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    transition: all 0.15s ease-in-out;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.02rem;
+}
+
+.dismiss-btn a:focus, .dismiss-btn a:focus-visible, .dismiss-btn a:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 30px -10px hsl(4, 100%, 67%);
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP DESIGN*/
+@media screen  and (min-width: 1400px){
+    .sign-up-section{
+        width: 1150px;
+        height: 800px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1.5rem;
+        padding: 1.5rem 0;
+        padding-right: 1rem;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+    .bg{
+        background-image: url('illustration-sign-up-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        border-radius: 1rem;
+        overflow: hidden;
+        width:  50%;
+        height: 100%;
+        order: 2;
+    }
+
+
+    
+
+  .info{
+    background-color: transparent;
+    order: 1;
+    padding: 0 3rem;
+    width: 50%;
+  }
+
+
+
+  .header h1{
+    line-height: 1.8rem;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.header p{
+    font-size: 1.3rem;
+    width: 29rem;
+    line-height: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.lists span img, .lists span{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.lists p{
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    max-width: initial;
+}
+
+.footer{
+    padding-top: 2.5rem;
+    padding-right: 0;
+    
+}
+.email-label{
+    margin-bottom: 1rem;
+}
+
+.email-label label, span.error{
+    font-size: 1.2rem;
+
+}
+
+
+.email-field{
+    margin-bottom: 2rem;
+
+}
+
+
+input, button{
+ font-size: 1.3rem;
+
+}
+
+
+
+
+/*SUCCESS DESIGN DESKTOP*/
+
+.success-section{ 
+    width: 550px;
+    height: 600px;
+    padding: 0 3rem;
+    border-radius: 2rem;
+
+
+}
+
+.success-header{
+    margin: 3rem 0;
+}
+
+.success-header span img{
+    margin-left: 0;
+    width: 4rem;
+    height: 4rem;
+}
+.success-header h1{
+    margin-left: 0;
+    font-size: 4rem;
+    max-width: 22rem;
+    line-height: 4rem;
+}
+
+
+.success-message{
+    margin-left: 0;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 0;
+}
+
+.dismiss-btn{
+    padding: 0;
+    width: 454px;
+
+}
+
+}

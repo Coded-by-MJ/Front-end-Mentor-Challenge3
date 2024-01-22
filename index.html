@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+    
+
+    <title>Newsletter Sign-up</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+   <section class="sign-up-section">
+     <div class="info">
+      <div class="header">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+     </div> 
+     <div class="lists">
+        <p><span><img src="icon-list.svg"></span>
+            Product discovery and building what matters
+         </p>
+         <p><span><img src="icon-list.svg"></span>
+            Measuring to ensure updates are a success
+         </p>
+         <p><span><img src="icon-list.svg"></span>
+            And much more!
+         </p>
+     </div>
+
+     <div class="footer">
+        <form method="post" id="form" novalidate>
+        <div class="email-label">
+         <label for="email">Email address</label>   <span class="error">Valid email required</span>
+        </div>
+        <div class="email-field">
+         <input type="email" id="email" name="email" placeholder="email@company.com" required>
+        </div>
+        
+        <button type="button" id="email-btn">  Subscribe to monthly newsletter </button>
+        </form>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/Coded_by_MJ" target="_blank">MJ</a>.
+      </div>
+   </div>
+    <div class="bg">
+
+    </div>
+</section>
+  
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var subBtn = document.getElementById('email-btn');
+    subBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // prevent form submission
+
+        let form = document.getElementById('form');
+        let input = document.querySelector('input');
+        let spanerror = document.querySelector('.error');
+        spanerror.style.display = 'none';
+
+        if (form.checkValidity() === false) {
+            input.classList.add('input--error'); 
+            spanerror.style.display = 'block';
+        } else {
+            input.classList.remove('input--error');
+            spanerror.style.display = 'none';
+            window.location.href = 'success.html';
+        }
+    });
+});
+</script>
+</body>
+</html>
