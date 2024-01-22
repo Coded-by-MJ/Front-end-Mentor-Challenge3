@@ -11,8 +11,8 @@ This is my solution to the [Newsletter sign-up form with success message challen
 
 ### Links
 
-- Solution URL: [Click to view Solution](https://www.frontendmentor.io/solutions/faq-accordion-xsEDHGWF7x)
-- Live Site URL: [Click to view Live Site](https://coded-by-mj.github.io/Front-end-Mentor-Challenge2/)
+- Solution URL: [Click to view Solution](https://www.frontendmentor.io/solutions/responsive-newsletter-signup-validated-with-js-w5d93GCzeD)
+- Live Site URL: [Click to view Live Site](https://coded-by-mj.github.io/Front-end-Mentor-Challenge3/)
 
 
 
